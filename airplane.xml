@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AirplaneManagement 
+    xmlns="http://www.example.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://raw.githubusercontent.com/FatiUnal/AirplaneXml/main/airplane.xsd">
+    <Airplane>
+        <Id>1</Id>
+        <Brand>Boeing</Brand>
+        <Model>747</Model>
+        <Capacity>400</Capacity>
+    </Airplane>
+    <Airplane>
+        <Id>2</Id>
+        <Brand>Airbus</Brand>
+        <Model>A320</Model>
+        <Capacity>180</Capacity>
+    </Airplane>
+
+
+    <Employee>
+        <Id>1</Id>
+        <Name>Fatih</Name>
+        <Email>fatih@gmail.com</Email>
+        <Password>123</Password>
+        <NationalName>Turkey</NationalName>
+        <BirthdayYear>2002</BirthdayYear>
+        <Gorev>Pilot</Gorev>
+    </Employee>
+    <Employee>
+        <Id>2</Id>
+        <Name>Ahmet</Name>
+        <Email>ahmet@gmail.com</Email>
+        <Password>1234</Password>
+        <NationalName>Turkey</NationalName>
+        <BirthdayYear>1985</BirthdayYear>
+        <Gorev>Uçuş Mühendisi</Gorev>
+    </Employee>
+
+
+
+    <Customer>
+        <Id>1</Id>
+        <Name>Elif</Name>
+        <Email>elif@gmail.com</Email>
+        <Password>456</Password>
+        <NationalName>789012</NationalName>
+        <BirthdayYear>1990</BirthdayYear>
+        <dayOfWeek>Adult</dayOfWeek>
+    </Customer>
+    <Customer>
+        <Id>2</Id>
+        <Name>Emre</Name>
+        <Email>emre@gmail.com</Email>
+        <Password>123</Password>
+        <NationalName>Turkey</NationalName>
+        <BirthdayYear>1995</BirthdayYear>
+        <dayOfWeek>Student</dayOfWeek>
+    </Customer>
+    <Customer>
+        <Id>3</Id>
+        <Name>Mehmet</Name>
+        <Email>mehmet@gmail.com</Email>
+        <Password>123</Password>
+        <NationalName>Turkey</NationalName>
+        <BirthdayYear>1995</BirthdayYear>
+        <dayOfWeek>Student</dayOfWeek>
+    </Customer>
+
+
+</AirplaneManagement>
