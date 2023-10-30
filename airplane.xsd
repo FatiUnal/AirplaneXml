@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Airplane">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Id" type="xs:integer"/>
+        <xs:element name="Brand" type="xs:string"/>
+        <xs:element name="Model" type="xs:string"/>
+        <xs:element name="Capacity" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="User">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Id" type="xs:integer"/>
+        <xs:element name="Name" type="xs:string"/>
+        <xs:element name="Email" type="xs:string"/>
+        <xs:element name="Password" type="xs:string"/>
+        <xs:element name="NationalName" type="xs:string"/>
+        <xs:element name="BirthdayYear" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="Employee">
+    <xs:complexType>
+        <extension base="User">
+            <xs:sequence>
+                <xs:element name="Gorev" type="xs:string"/>
+            </xs:sequence>
+        </extension> 
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Customer">
+    <xs:complexType>
+        <extension base="User">
+            <xs:sequence>
+                <simpleType name="dayOfWeek">
+                    <restriction base="string">
+                        <enumeration value="Student"/>
+                        <enumeration value="Adult"/>
+                        <enumeration value="Blind"/>
+                        <enumeration value="Baby"/>
+                    </restriction>
+                </simpleType>
+            </xs:sequence>
+        </extension> 
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
